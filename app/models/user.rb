@@ -5,6 +5,8 @@ class User < ApplicationRecord
 
   # Validations
 
+  validates :dob, :uniqueness => true
+
   validates :dob, :numericality => true
 
   # Include default devise modules. Others available are:
